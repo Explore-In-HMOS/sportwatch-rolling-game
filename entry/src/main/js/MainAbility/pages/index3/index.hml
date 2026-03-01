@@ -1,0 +1,30 @@
+<div class="container" onswipe="touchMove">
+
+    <image class="target-img" show="{{!showPopup}}" src="/common/assets/_target.png"></image>
+
+    <text class="popup-title" show="{{showPopup}}">Level Completed!</text>
+    <text class="popup-hint" onclick="restart" show="{{showPopup}}">tap to continue</text>
+
+    <stack show="{{anim1Front}}" class="animator-stack">
+        <image-animator class="roll-obj2" ref="a2back"
+                        iteration="1" images="{{frames2}}"
+                        onclick="handleToggle2" duration="1.5s" fillmode="forwards">
+        </image-animator>
+        <image-animator class="roll-obj1" ref="a1front"
+                        iteration="1" images="{{frames1}}"
+                        onclick="handleToggle1" duration="1s" fillmode="forwards">
+        </image-animator>
+    </stack>
+
+    <stack show="{{!anim1Front}}" class="animator-stack">
+        <image-animator class="roll-obj1" ref="a1back"
+                        iteration="1" images="{{frames1}}"
+                        onclick="handleToggle1" duration="1s" fillmode="forwards">
+        </image-animator>
+        <image-animator class="roll-obj2" ref="a2front"
+                        iteration="1" images="{{frames2}}"
+                        onclick="handleToggle2" duration="1.5s" fillmode="forwards">
+        </image-animator>
+    </stack>
+
+</div>

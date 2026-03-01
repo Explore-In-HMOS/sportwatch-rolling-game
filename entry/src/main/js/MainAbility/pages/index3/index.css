@@ -1,0 +1,58 @@
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.animator-stack {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    background-color: #000000;
+}
+
+.popup-title {
+    color: #fffdfdfd;
+    font-size: 27px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup-hint {
+    color: #888888;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.target-img {
+    width: 120px;
+    height: 60px;
+    margin-top: -20px;
+    margin-bottom: 70px;
+    background-color: yellow;
+}
+
+.roll-obj1 {
+    margin-left: 80px;
+    margin-top: 5px;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+}
+
+.roll-obj2 {
+    margin-left: 150px;
+    margin-top: 0px;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+}
